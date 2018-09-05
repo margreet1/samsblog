@@ -1,5 +1,6 @@
 <%= simple_form_for @review do |f| %>
   <%= f.input :restaurant %>
-  <!-- <%= f.input :password %> -->
+  <%= f.input :imageUrl %>
+  <%= t.input :rating %>
   <%= f.button :submit %>
 <% end %>
