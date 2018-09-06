@@ -10,8 +10,7 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    @review = Review.create(restaurant: params[:restaurant], params[:])
+    @review = Review.create(restaurant: params[:restaurant], imageUrl: params[:imageUrl], rating: params[:rating])
     redirect_to action: "index"
   end
-
 end
