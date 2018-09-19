@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   root to: 'reviews#index'
 
   resources :reviews, only: [:index, :show]
+
+  namespace :admin do
+    resources :reviews
+  end
 end
