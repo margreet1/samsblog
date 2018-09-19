@@ -1,4 +1,9 @@
 class Review < ApplicationRecord
-  belongs_to :user
-  validates_presence_of(:restaurant, :revoew, :imageUrl, :rating)
+  validates_presence_of(
+    :restaurant,
+    :title,
+    :body,
+    :imageUrl,
+    :rating,
+  )
 end
