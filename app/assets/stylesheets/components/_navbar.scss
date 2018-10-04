@@ -8,7 +8,7 @@
   padding: 0px 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: sticky;
   top: 0px;
   z-index: 3;
@@ -26,17 +26,18 @@
   border-radius: 50%;
 }
 /* Left section */
-.navbar-wagon-left {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-/* Right section */
-.navbar-wagon-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+// .navbar-wagon-left {
+//   display: flex;
+//   text-align: left;
+//   // align-items: center;
+//   justify-content: space-between;
+// }
+// /* Right section */
+// .navbar-wagon-right {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
 
 /* Basic navbar item */
 .navbar-wagon-item {
