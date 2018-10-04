@@ -1,7 +1,9 @@
+<!-- overall page -->
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Samsblog</title>
+    <title>London Foodi</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +12,7 @@
   </head>
 
   <body>
+    <%= render "partials/navbar" %>
     <%= yield %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>

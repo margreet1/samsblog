@@ -1,14 +1,20 @@
+<!-- Home page -->
+
 <h1>Reviews#index</h1>
 <p>Find me in app/views/reviews/index.html.erb</p>
 
+London Foodi
+
+
 <div class="container">
-  <%  @reviews.each do |review| %>
-    <div>
-      <div><%= link_to review.restaurant, review_path(review) %></div>
-      <div><%= review.title %></div>
-      <div><%= review.body %></div>
-      <div><%= image_tag review.imageUrl %></div>
-      <div><%= review.rating %></div>
-    </div>
-  <% end %>
-</div>
+    <%  @reviews.each do |review| %>
+      <div>
+        <div><%= link_to review.restaurant, review_path(review) %></div>
+        <div><%= review.title %></div>
+        <div><%= review.body %></div>
+        <div><%= image_tag review.imageUrl %></div>
+        <div><%= review.rating %></div>
+      </div>
+    <% end %>
+  </div>
+
