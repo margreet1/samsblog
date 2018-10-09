@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head></head>
 
+<body>
+<%  @reviews.each do |review| %>
 <div class="polaroid">
-  <img src="img_5terre.jpg" alt="5 Terre" style="width:100%">
+  <img src="<%= review.imageUrl %>" alt="5 Terre" style="width:100%">
   <div class="container">
-    <p>Cinque Terre</p>
+    <p><%= link_to review.restaurant, review_path(review) %></p>
+    <p><%= review.title %></p>
+    <p><%= review.body %></p>
+    <p><%= review.rating %></p>
   </div>
 </div>
-
-<div class="polaroid">
-  <img src="lights600x400.jpg" alt="Norther Lights" style="width:100%">
-  <div class="container">
-    <p>Northern Lights</p>
-  </div>
-</div>
-
+<% end %>
 </body>
 </html>

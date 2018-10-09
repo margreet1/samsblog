@@ -4,6 +4,7 @@ class Review < ApplicationRecord
     :title,
     :body,
     :imageUrl,
+    :alt,
     :rating,
   )
 end

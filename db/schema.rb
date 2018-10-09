@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2018_09_19_183421) do
   create_table "reviews", force: :cascade do |t|
     t.string "restaurant"
     t.string "imageUrl"
+    t.string "alt"
     t.float "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

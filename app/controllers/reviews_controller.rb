@@ -7,4 +7,8 @@ class ReviewsController < ApplicationController
   def show
     @review = Review.find(params[:id])
   end
+
+  def admin
+    @review = Review.all
+  end
 end
