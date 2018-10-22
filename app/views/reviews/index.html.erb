@@ -1,14 +1,16 @@
 <!-- Home page -->
 <%= render "partials/banner" %>
-<% @reviews.each do |review| %>
-  <div class="polaroid">
-  <img src="<%= review.imageUrl %>" alt="5 Terre" style="width:100%">
-  <div class="container">
-    <p><%= link_to review.restaurant, review_path(review) %></p>
-    <p><%= review.title %></p>
-    <p><%= review.body %></p>
-    <p><%= review.rating %></p>
-  </div>
 
+<% @reviews.each do |review| %>
+<div class="col-xs-12 col-sm-4">
+  <div class="polaroid">
+    <img src="<%= review.imageUrl %>" alt="5 Terre" style="width:100%">
+    <div class="container">
+      <p><%= link_to review.restaurant, review_path(review) %></p>
+      <p><%= review.title %></p>
+      <p><%= review.body %></p>
+      <p><%= review.rating %></p>
+    </div>
+  </div>
 </div>
 <% end %>

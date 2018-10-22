@@ -40,6 +40,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'devise'
+gem 'pundit'
 gem 'simple_form'
 gem 'carrierwave', '~> 1.0'
 
