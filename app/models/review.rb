@@ -3,8 +3,7 @@ class Review < ApplicationRecord
     :restaurant,
     :title,
     :body,
-    :imageUrl,
-    :alt,
+    :picture,
     :rating,
   )
 end

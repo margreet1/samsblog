@@ -14,7 +14,8 @@ module Admin
 
     # POST /admin/reviews
     def create
-      @review = Review.new(params[:review])
+      @review = Review.new
+      @review.picture = Base64.strict_encode64(params[:review][:picture].read)
       if @review.save
         redirect_to admin_reviews_url
       else

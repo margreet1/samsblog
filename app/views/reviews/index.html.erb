@@ -4,7 +4,7 @@
 <% @reviews.each do |review| %>
 <div class="col-xs-12 col-sm-4">
   <div class="polaroid">
-    <img src="<%= review.imageUrl %>" alt="5 Terre" style="width:100%">
+    <img src="data:image/png;base64,<%=review.picture%>" alt="" style="width:100%">
     <div class="container">
       <p><%= link_to review.restaurant, review_path(review) %></p>
       <p><%= review.title %></p>
