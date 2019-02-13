@@ -39,7 +39,6 @@ gem 'mini_magick', '~> 4.8'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap'
 gem 'jquery-rails'
-gem 'devise'
 gem 'pundit'
 gem 'simple_form'
 gem 'carrierwave', '~> 1.0'
