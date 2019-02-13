@@ -14,7 +14,7 @@ module Admin
 
     # POST /admin/reviews
     def create
-      @review = Review.new
+      @review = Review.new(review_params)
       @review.picture = Base64.strict_encode64(params[:review][:picture].read)
       if @review.save
         redirect_to admin_reviews_url
@@ -43,6 +43,12 @@ module Admin
       @review = Review.find(params[:id])
       @review.destroy
       redirect_to admin_reviews_url
+    end
+
+  private
+
+    def review_params
+      params[:review].permit(:restaurant, :picture, :rating, :title, :body)
     end
   end
 end

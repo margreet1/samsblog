@@ -1,3 +1,4 @@
+<%= @review.errors.full_messages.to_sentence %>
 
 <%= form_for @review, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
   <h1 class="text-center">Let's write a blog!</h1>
